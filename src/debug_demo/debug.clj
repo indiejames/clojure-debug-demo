@@ -161,7 +161,7 @@
            
 (defn setup-debugger
  "Intialize the debugger."
- []
+ [port]
  (let [vm-manager (com.sun.jdi.Bootstrap/virtualMachineManager)
        attachingConnectors (.attachingConnectors vm-manager)
        connector (some (fn [ac]
@@ -171,7 +171,7 @@
                        attachingConnectors)
        params-map (when connector (.defaultArguments connector))
        port-arg (when params-map (get params-map "port"))
-       _ (when port-arg (.setValue port-arg 8030))]
+       _ (when port-arg (.setValue port-arg port))]
    (when-let [vm (when port-arg (.attach connector params-map))]
      (println "Attached to process " (.name vm))
      (let [evt-req-mgr (.eventRequestManager vm)
