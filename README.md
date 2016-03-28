@@ -53,7 +53,7 @@ Now attach to the VM of REPL 1.
     #'user/vm
   
 If you don't see the "Attached to process" message then check to make sure that you 
-have used the same port that you saw in the "Listening for transpaort" message from
+have used the same port that you saw in the "Listening for transport" message from
 REPL 1. Also, the "Listening for events..." message is printed on a separate thread, so
 this line may get mixed in with the other output.
 
@@ -121,6 +121,6 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-### If you want to be awesome.
+### If you want to be awesome
 
-Credit me with any work derived from this.
+Credit this project for any work derived from this.
