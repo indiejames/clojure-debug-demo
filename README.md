@@ -34,7 +34,7 @@ Call the `foo` function to see the output.
     w =  16
     nil
   
-Now start another shell and launch a new REPL. _Do not set JVM_OPTS_.
+Now start another shell and launch a new REPL. _Do not set JVM_OPTS!!!_.
 
     lein REPL
   
